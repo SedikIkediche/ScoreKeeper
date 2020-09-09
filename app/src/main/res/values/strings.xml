@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Scorekeeper</string>
+
+    <!--Teams strings-->
+    <string name="team_b">Team B</string>
+    <string name="team_a">Team A</string>
+
+    <!-- TextViews strings-->
+    <string name="score">0</string>
+    <string name="foul">0</string>
+    <string name="shot">0</string>
+
+    <!-- Button strings-->
+    <string name="goal_button">+1 Goal</string>
+    <string name="foul_button">+1 Foul</string>
+    <string name="shot_button">+1 Shot</string>
+    <string name="reset">Reset</string>
+
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <LinearLayout
+            android:id="@+id/match_information-container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamTextViewStyle"
+                    android:text="@string/team_a" />
+
+                <TextView
+                    android:id="@+id/score_team_a_text_view"
+                    style="@style/ScoreTextViewStyle"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/foul_team_a_text_view"
+                    style="@style/FoulAndShootTextViewStyle"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/shot_team_a_text_view"
+                    style="@style/FoulAndShootTextViewStyle"
+                    android:text="@string/shot" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="setScoreForTeamA"
+                    android:text="@string/goal_button"
+                    android:theme="@style/ButtonStyle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="setFoulForTeamA"
+                    android:text="@string/foul_button"
+                    android:theme="@style/ButtonStyle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:onClick="setShotForTeamA"
+                    android:text="@string/shot_button"
+                    android:theme="@style/ButtonStyle" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/darker_gray" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TeamTextViewStyle"
+                    android:text="@string/team_b" />
+
+                <TextView
+                    android:id="@+id/score_team_b_text_view"
+                    style="@style/ScoreTextViewStyle"
+                    android:text="@string/score" />
+
+                <TextView
+                    android:id="@+id/foul_team_b_text_view"
+                    style="@style/FoulAndShootTextViewStyle"
+                    android:text="@string/foul" />
+
+                <TextView
+                    android:id="@+id/shot_team_b_text_view"
+                    style="@style/FoulAndShootTextViewStyle"
+                    android:text="@string/shot" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="setScoreForTeamB"
+                    android:text="@string/goal_button"
+                    android:theme="@style/ButtonStyle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
+                    android:onClick="setFoulForTeamB"
+                    android:text="@string/foul_button"
+                    android:theme="@style/ButtonStyle" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:onClick="setShotForTeamB"
+                    android:text="@string/shot_button"
+                    android:theme="@style/ButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/match_information-container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="16dp"
+            android:onClick="resetMatch"
+            android:text="@string/reset"
+            android:theme="@style/ButtonStyle" />
+    </RelativeLayout>
+</ScrollView>
